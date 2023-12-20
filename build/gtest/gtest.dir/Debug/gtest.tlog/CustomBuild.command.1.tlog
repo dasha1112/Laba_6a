@@ -1,0 +1,10 @@
+^D:\LABA_ALG\LABA_6A\GTEST\CMAKELISTS.TXT
+setlocal
+D:\Downloads\bin\cmake.exe -SD:/Laba_alg/Laba_6a -BD:/Laba_alg/Laba_6a/build --check-stamp-file D:/Laba_alg/Laba_6a/build/gtest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F4EFE66-6496-3837-BEC1-FD4ADC7FBD8A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Laba_alg\Laba_6a\include;D:\Laba_alg\Laba_6a\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Laba_alg\Laba_6a\include;D:\Laba_alg\Laba_6a\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Laba_alg\Laba_6a\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Laba_alg/Laba_6a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Downloads\bin\cmake.exe -SD:/Laba_alg/Laba_6a -BD:/Laba_alg/Laba_6a/build --check-stamp-file D:/Laba_alg/Laba_6a/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Downloads\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeCCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeCXXCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeRCCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Laba_alg\Laba_6a\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Laba_alg/Laba_6a/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Downloads\bin\cmake.exe -SD:/Laba_alg/Laba_6a -BD:/Laba_alg/Laba_6a/build --check-stamp-file D:/Laba_alg/Laba_6a/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Downloads\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Downloads\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Downloads\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Downloads\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeCCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeCXXCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeRCCompiler.cmake;D:\Laba_alg\Laba_6a\build\CMakeFiles\3.27.7\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Laba_alg\Laba_6a\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Laba_alg\Laba_6a\build\ZERO_CHECK.vcxproj">
+      <Project>{980B141F-382A-3E93-8CDC-AD95F4F73C87}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Laba_alg\Laba_6a\build\samples\_StackLabSample_alg.vcxproj">
+      <Project>{5977804A-65F5-3D1E-8D17-924B830C2933}</Project>
+      <Name>_StackLabSample_alg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Laba_alg\Laba_6a\build\gtest\gtest.vcxproj">
+      <Project>{C9E7A481-E36D-380E-BB19-5C4C8EE2BF22}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Laba_alg\Laba_6a\build\src\set.vcxproj">
+      <Project>{123345C8-09BA-377D-B3C5-2A34C14F686E}</Project>
+      <Name>set</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Laba_alg\Laba_6a\build\test\test_set.vcxproj">
+      <Project>{DD5CA964-354C-3561-92F1-BF7AB620F414}</Project>
+      <Name>test_set</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

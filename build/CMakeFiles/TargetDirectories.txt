@@ -1,0 +1,6 @@
+D:/Laba_alg/Laba_6a/build/CMakeFiles/ALL_BUILD.dir
+D:/Laba_alg/Laba_6a/build/CMakeFiles/ZERO_CHECK.dir
+D:/Laba_alg/Laba_6a/build/src/CMakeFiles/set.dir
+D:/Laba_alg/Laba_6a/build/samples/CMakeFiles/_StackLabSample_alg.dir
+D:/Laba_alg/Laba_6a/build/gtest/CMakeFiles/gtest.dir
+D:/Laba_alg/Laba_6a/build/test/CMakeFiles/test_set.dir
