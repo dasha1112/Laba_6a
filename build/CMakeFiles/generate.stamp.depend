@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/Downloads/share/cmake-3.27/Modules/CMakeCInformation.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeCXXInformation.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeRCInformation.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake
+D:/Downloads/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Downloads/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Downloads/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake
+D:/Downloads/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake
+D:/Downloads/share/cmake-3.27/Modules/Compiler/MSVC.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/Windows.cmake
+D:/Downloads/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake
+D:/Laba_alg/Laba_6a/CMakeLists.txt
+D:/Laba_alg/Laba_6a/build/CMakeFiles/3.27.7/CMakeCCompiler.cmake
+D:/Laba_alg/Laba_6a/build/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake
+D:/Laba_alg/Laba_6a/build/CMakeFiles/3.27.7/CMakeRCCompiler.cmake
+D:/Laba_alg/Laba_6a/build/CMakeFiles/3.27.7/CMakeSystem.cmake
